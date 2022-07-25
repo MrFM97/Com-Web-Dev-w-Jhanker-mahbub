@@ -99,16 +99,32 @@
                             alt="right arrow-forward"></button>
                 </div>
 
-                <div class="toast d-flex align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
-                    <div class="d-flex">
-                        <img src="/convention-center (main file)/icons/Vector.svg" alt="vector file">
-                        <div class="toast-body">
-                            20% off on next booking
+                <!-- Toast -->
+                <div aria-live="polite" aria-atomic="true" class="position-relative">
+                    <!-- Position it: -->
+                    <!-- - `.toast-container` for spacing between toasts -->
+                    <!-- - `top-0` & `end-0` to position the toasts in the upper right corner -->
+                    <!-- - `.p-3` to prevent the toasts from sticking to the edge of the container  -->
+                    <div class="toast-container top-0 end-0 p-3">
+                  
+                      <!-- Then put toasts within -->
+                      <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-header">
+                          <img src="..." class="rounded me-2" alt="...">
+                          <strong class="me-auto">Bootstrap</strong>
+                          <small class="text-muted">just now</small>
+                          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
                         </div>
-                        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast"
-                            aria-label="Close"></button>
+                        <div class="toast-body">
+                          See? Just like this.
+                        </div>
+                      </div>
+                  
+                      
                     </div>
-                </div>
+                  </div>
+                <!-- Toast -->
+                
             </div>
         </div>
 
