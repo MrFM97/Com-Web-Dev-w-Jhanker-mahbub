@@ -9,7 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="lg:dark:bg-gray-800">
     <!-- <h1 class="text-6xl">I have a secret tail that you don't know</h1>
     <h5 class="font-black">I will expose it today</h5>
     <h5 class="font-extrabold">I will expose it today</h5>
@@ -105,8 +105,8 @@
     </section> -->
     <div class="h-screen flex justify-center items-center bg-gray-100">
         <div class="max-w-sm mx-auto p-8 bg-white rounded-xl shadow-md space-y-2 sm:flex sm:space-y-1 sm:space-x-6">
-            <img class="h-24 ring-4 ring-green-500 sm:mx-0 sm:flex-shrink-0" src="/Penguin-site/images/box.png"
-                alt="normal box">
+            <img class="h-24 ring-4 ring-green-500 sm:mx-0 sm:flex-shrink-0 transform hover:scale-105 duration-500"
+                src="/Penguin-site/images/box.png" alt="normal box">
 
             <div class="text-center space-y-1 sm:text-left">
                 <div>
@@ -114,7 +114,8 @@
                     <p>Youtube channel</p>
                 </div>
 
-                <button class="px-4 py-1 border border-purple-300 rounded-full text-sm text-purple-600">Visit
+                <button
+                    class="px-4 py-1 border border-purple-300 rounded-full text-sm text-purple-600 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Visit
                     now</button>
             </div>
         </div>
