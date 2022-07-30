@@ -18,3 +18,9 @@ var person = "mubtasim murta";
 var serious = true;
 var isFullMarks = true;
 var isSingle = false;
+
+var userHomeAddress = "okdokie" //camel case
+var UserHomeAddress = "okidokie-2" //pascal case 
+var user_home_address = "Okidokie-3" //snake case
+
+//Keyword should be lowercased. VAR/Var not right. Only var okay
