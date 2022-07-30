@@ -6,7 +6,15 @@ var price = 11;
 
 // var = keyword price = name 11 = value
 
+//numeric
 var age = 24;
-
 var money = 00;
 var weight = 84;
+
+//string
+var person = "mubtasim murta";
+
+//Boolean
+var serious = true;
+var isFullMarks = true;
+var isSingle = false;
