@@ -1,3 +1,12 @@
 console.log(555);
 console.log("Sada Sada kala kala");
 console.log("hawa is releasing");
+
+var price = 11;
+
+// var = keyword price = name 11 = value
+
+var age = 24;
+
+var money = 00;
+var weight = 84;
