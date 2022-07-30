@@ -28,3 +28,7 @@ var mangoes = 11;
 var person = 2;
 console.log(mangoes % person)
 
+var f1 = 17;
+var f2 = 5;
+console.log(f1 % f2);
+
