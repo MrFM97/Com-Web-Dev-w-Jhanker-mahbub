@@ -1,6 +1,5 @@
-destination[2] = 'thailand';
-var index = destination.indexOf('bali');
-
-destination.push('Bhutan');
-destination.push('Australia');
-destination.pop()
+var me = 85;
+var tom = 66;
+var jane = 95;
+var peter = 56;
+var john = 40;
