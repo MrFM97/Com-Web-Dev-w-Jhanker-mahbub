@@ -1,1 +1,1 @@
-console.log(numbers);
+6
