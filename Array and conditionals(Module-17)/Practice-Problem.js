@@ -4,16 +4,16 @@ var fruits = ['apple', 'Bananna', 'Orange'];
 
 var position = fruits.indexOf(1);
 fruits.splice(1, 1, 'Mango');
-console.log(position);
+// console.log(position);
 
 fruits.pop();
 fruits.push('watermelon');
 
-console.log(fruits);
+// console.log(fruits);
 
 // Practice problem-2
 
-var friends;
+var friends = 50;
 var me = 85;
 var tom = 66;
 var jane = 95;
@@ -46,16 +46,6 @@ var num1 = 82;
 var num2 = 79;
 var num3 = 45;
 
-if (num1 > num2) {
-    console.log('num1 big');
-}
-else if (num2 > num3) {
-    console.log('num2 big');
-}
-else {
-    console.log('num3 big');
-}
-/*
 if (num1 > num2 && num1 > num3){
     console.log('First Number is a large number');
 }
@@ -64,7 +54,7 @@ else if(num2 > num1 && num2 > num3){
 }
 else{
     console.log('Third number is large number');
-} */
+} 
 
 //Practice problem-4
 
@@ -81,7 +71,7 @@ else {
 
 //text document practice problem - 1
 
-var finalResult;
+var finalResult = 80;
 
 console.log('Enter you number: ');
 
@@ -111,7 +101,7 @@ else{
 
 //text document practice problem - 2
 
-var traffic;
+var traffic = red;
 
 if (traffic == "red") {
     console.log("Danger! Stop");
