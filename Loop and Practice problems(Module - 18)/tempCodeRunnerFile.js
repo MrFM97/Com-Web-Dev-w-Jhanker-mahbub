@@ -1,2 +1,5 @@
- // console.log(number);
-        // console.log(i);
+for(var i = 1; i <= 10; i++){
+    console.log('রাত ৮ টা বাজে মডিউল আনলক করো ');
+    console.log('ফটাফট ভিডিও দেখে দেখে প্রাকটিস করো');
+    console.log('ভিডিও দেখতে দেখতে নোটস নাও ');
+}
