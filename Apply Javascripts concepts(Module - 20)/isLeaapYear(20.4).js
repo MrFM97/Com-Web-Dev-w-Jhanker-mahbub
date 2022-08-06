@@ -4,6 +4,7 @@ function isleapYear(year) {
         // console.log('Your year is leap year: ', year);
         return true;
     }
+    // return false
     else{
         // console.log('Your year is not leap year', year);
         return false;
