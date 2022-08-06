@@ -10,5 +10,5 @@ function isleapYear(year) {
         return false;
     } 
 }
-var isMyYearLeapYear = isleapYear(1960);
+var isMyYearLeapYear = isleapYear(2023);
 console.log('my year ', isMyYearLeapYear);

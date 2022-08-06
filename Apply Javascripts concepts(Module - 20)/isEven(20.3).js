@@ -27,15 +27,15 @@ function isEven(number) {
     // console.log(remainder);
     if (remainder == 0) {
         // console.log('number is even');
-        return true
+        return true;
     }
     else{
         // console.log('number is odd');
-        return false
+        return false;
     }
 }
 
-const  myNumberIsEven = isEven(303);
+const myNumberIsEven = isEven(303);
 console.log(myNumberIsEven);
 const herNumberIsEven = isEven(1280);
 console.log(herNumberIsEven);
