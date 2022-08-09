@@ -7,3 +7,12 @@ const phones = [
     {name: 'Nokia', camera: 10, storage: '32gb', price: 34000, color: 'white'},
     {name: 'HTC', camera: 70, storage: '64gb', price: 40000, color: 'maroon'},
 ];
+
+function cheapestPhone(phones) {
+    for (let i = 0; i < phones.length; i++) {
+        const phone = phones[i];
+        console.log(phone);
+    }
+}
+
+const mySelection = cheapestPhone(phones);
