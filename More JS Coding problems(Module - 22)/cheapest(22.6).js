@@ -1,3 +1,5 @@
+// [45, 21, 6, 98, 56]
+
 const phones = [
     {name: 'Realme', camera: 64, storage: '128gb', price: 23000, color: 'blue'},
     {name: 'Asus', camera: 16, storage: '16gb', price: 10000, color: 'black'},
@@ -9,10 +11,15 @@ const phones = [
 ];
 
 function cheapestPhone(phones) {
+    let cheapest = phones[0];
     for (let i = 0; i < phones.length; i++) {
         const phone = phones[i];
-        console.log(phone);
+        if (phone.price < cheapest.Price) {
+            cheapest = phone;
+        }
     }
+    return cheapest;
 }
 
 const mySelection = cheapestPhone(phones);
+console.log(mySelection);
