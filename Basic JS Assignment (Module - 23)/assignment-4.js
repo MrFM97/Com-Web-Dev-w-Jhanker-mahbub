@@ -29,18 +29,24 @@ function isJavaScriptFile(fileName) {
 // // Problem number - 3 (oilPrice)
 
 function oilPrice(diesel, patrol, octane) {
-    const dieselLitre = 114;
-    const patrolLitre = 130;
-    const octaneLitre = 135;
-
-    const dieselNeed = diesel * dieselLitre;
-    const patrolNeed = patrol * patrolLitre;
-    const octaneNeed = octane * octaneLitre;
-
-    const totalMoneySpent = dieselNeed + patrolNeed + octaneNeed;
-    return totalMoneySpent;
+    if (
+        typeof diesel === "number" && typeof patrol === "number" && typeof octane === "number"
+      ) {
+          const dieselLitre = 114;
+          const patrolLitre = 130;
+          const octaneLitre = 135;
+      
+          const dieselNeed = diesel * dieselLitre;
+          const patrolNeed = patrol * patrolLitre;
+          const octaneNeed = octane * octaneLitre;
+      
+          const totalMoneySpent = dieselNeed + patrolNeed + octaneNeed;
+          return totalMoneySpent;
+      }
+      else{
+        return "Error! Your input isn't valid"
+      }
 }
-
 
 
 // Problem number - 4 (publicBusFare)
