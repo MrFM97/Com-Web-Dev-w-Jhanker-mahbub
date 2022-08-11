@@ -10,3 +10,9 @@ function make_avg(pera) {
 }
 const myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 make_avg(myArray);
+
+/* for (arr of pera) {
+    if (arr == 69) {
+        console.log(arr);
+    }
+} */
