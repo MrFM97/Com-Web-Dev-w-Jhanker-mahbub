@@ -26,12 +26,22 @@ function isJavaScriptFile(fileName) {
 }
 
 
-
 // // Problem number - 3 (oilPrice)
 
-function oilPrice(params) {
+function oilPrice(diesel, patrol, octane) {
+    const dieselLitre = 114;
+    const patrolLitre = 130;
+    const octaneLitre = 135;
 
+    const dieselNeed = diesel * dieselLitre;
+    const patrolNeed = patrol * patrolLitre;
+    const octaneNeed = octane * octaneLitre;
+
+    const totalMoneySpent = dieselNeed + patrolNeed + octaneNeed;
+    return totalMoneySpent;
 }
+
+
 
 // Problem number - 4 (publicBusFare)
 function publicBusFare(public) {
@@ -53,7 +63,7 @@ function publicBusFare(public) {
             return busFare;
         }
     } else {
-        return "Error, Please provide a Number";
+        return "Attention! This is not a number";
     }
 }
 
@@ -61,7 +71,7 @@ function publicBusFare(public) {
 
 function isBestFriend(bef1, bef2) {
     if (typeof bef1 !== 'object' && typeof bef2 !== 'object') {
-        return 'Error!! Please Enter Object. Not sentence or number';
+        return 'Error!! Please Enter a Object. Not sentence or number';
     }
     else {
         if (bef1.name === bef2.friend && bef1.friend === bef2.name) {
@@ -72,4 +82,3 @@ function isBestFriend(bef1, bef2) {
         }
     }
 }
-
