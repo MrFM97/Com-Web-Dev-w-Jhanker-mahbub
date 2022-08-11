@@ -1,1 +1,1 @@
-console.log('Enter you number: ');
+ console.log('cholo biye kore feli, ki r ase jibon e');
