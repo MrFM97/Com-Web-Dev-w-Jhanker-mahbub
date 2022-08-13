@@ -18,9 +18,24 @@
             <li>with</li>
             <li>you</li>
             <li>DOM</li>
+            <li>apple</li>
+            <li>banana</li>
+            <li>DOM</li>
         </ul>
     </main>
 
     <script src="JS/DOM.js"></script>
+    <script>
+      const liCollection = document.getElementsByTagName('li');
+    //   console.log([liCollection]);
+    for (const li of liCollection) {
+        console.log(li.innerText);
+    }
+
+    const allheadings = document.getElementsByTagName('h1');
+    for (const h1 of allheadings) {
+        console.log(h1.innerText);
+    }
+    </script>
 </body>
 </html>
