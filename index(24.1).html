@@ -10,18 +10,39 @@
 <body>
     <header>
         <h1>Welcome to my DOM</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, sint rerum? Doloremque facere facilis consequuntur consectetur expedita impedit, laboriosam accusantium.</p>
     </header>
     <main>
-        <h1>Hoping it would be awesome</h1>
-        <ul>
-            <li>ride</li>
-            <li>with</li>
-            <li>you</li>
-            <li>DOM</li>
-            <li>apple</li>
-            <li>banana</li>
-            <li>DOM</li>
-        </ul>
+        <section>
+            <h1>Hoping it would be awesome</h1>
+            <ul>
+                <li>ride</li>
+                <li>with</li>
+                <li>you</li>
+                <li>DOM</li>
+                <li>apple</li>
+                <li>banana</li>
+                <li>DOM</li>
+            </ul>
+        </section>
+
+        <section>
+            <h1 id="fruits-title">fruits I like</h1>
+            <ul>
+                <li>apple</li>
+                <li>banana</li>
+                <li>carrot</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="places">Places I like to visit </h1>
+            <ul>
+                <li class="important-places">sundarban</li>
+                <li class="important-places">kataban</li>
+                <li class="important-places">bandarban</li>
+                <li>shalban</li>
+            </ul>
+        </section>
     </main>
 
     <script src="JS/DOM.js"></script>
@@ -35,6 +56,14 @@
     const allheadings = document.getElementsByTagName('h1');
     for (const h1 of allheadings) {
         console.log(h1.innerText);
+    }
+
+    const fruitsTitle = document.getElementById('fruits-title');
+    fruitsTitle.innerText = 'Fruits changed by JS';
+
+    const places = document.getElementsByClassName('important-places');
+    for (const place of places) {
+            console.log(place.innerText);        
     }
     </script>
 </body>
