@@ -13,5 +13,5 @@ placesContainer.style.backgroundColor = 'teal'; */
 
 const placesContainer = document.getElementById('places-container');
 placesContainer.classList.add('yellow-bg');
-placesContainer.classList.add('text-center');
-placesContainer.classList.remove('large-text');
+// placesContainer.classList.add('text-center');
+// placesContainer.classList.remove('large-text');
