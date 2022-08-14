@@ -3,7 +3,11 @@ h1{
 }
 
 .yellow-bg{
-    background-color: yellowgreen;
+    font-size: 2em;
+}
+
+.large-text{
+    font-size: 2em;
 }
 #fruits-title{
     color: black;
