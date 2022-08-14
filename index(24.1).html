@@ -26,7 +26,7 @@
             </ul>
         </section>
 
-        <section>
+        <section class="fruits-container">
             <h1 id="fruits-title">fruits I like</h1>
             <ul>
                 <li>apple</li>
@@ -52,18 +52,28 @@
     for (const li of liCollection) {
         console.log(li.innerText);
     }
-
+    // option-1 : getElementsByTagName
     const allheadings = document.getElementsByTagName('h1');
     for (const h1 of allheadings) {
         console.log(h1.innerText);
     }
 
+    // option-2: getElementById
     const fruitsTitle = document.getElementById('fruits-title');
     fruitsTitle.innerText = 'Fruits changed by JS';
 
+    // option-3: getElementsByClassName
     const places = document.getElementsByClassName('important-places');
     for (const place of places) {
             console.log(place.innerText);        
+    }
+
+    // option-4: querySelector
+    // option-5: querySelectorAll
+    const someLi = document.querySelectorAll('.fruits-container li');
+    // console.log(someLi);
+    for (const li of someLi) {
+        console.log(li.innerText);
     }
     </script>
 </body>
