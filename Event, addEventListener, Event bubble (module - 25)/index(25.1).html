@@ -7,9 +7,18 @@
     <title>JS DOM Events</title>
 </head>
 <body>
-    <h1>Dominic toretto aka DOM er ajke special Day</h1>
-    <button>click me</button>
-
+    <h1 onclick="console.log('I am clicked')">Dominic toretto aka DOM er ajke special Day</h1>
+    <button title="this is a tooltip" onclick="console.log(7)">click me</button>
+    <button onclick="console.log(65)">Another button</button>
+    <br>
+    <button onclick="document.body.style.backgroundColor='yellow'">Make yellow</button>
+    <button onclick="makeRed()">Red button</button>
+    <button onclick="makeBlue()">make blue</button>
+    <button id="make-pink">Make pink</button>
+    <button id="make-purple">Make-purple</button>
     <script src="js/events.js"></script>
+    <script>
+        
+    </script>
 </body>
 </html>
