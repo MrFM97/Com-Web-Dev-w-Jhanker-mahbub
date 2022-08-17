@@ -3,7 +3,11 @@ value is even or odd. You need to do it in 4 ways:
 ● Has return + Has parameter
 ● No return + Has parameter */
 
-function odd_even() {
-    let nums = 45;
-    
-}
+function isEven(n) {
+    return n % 2 == 0;
+ }
+ 
+ function isOdd(n) {
+    return Math.abs(n % 2) == 1;
+ }
+
