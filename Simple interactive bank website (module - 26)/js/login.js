@@ -16,9 +16,9 @@ document.getElementById('btn-submit').addEventListener('click', function() {
     // Danger: do not varify email password in this way all the time (ideal way would be taught later)
     // 4. varify email and password and check about valid user and invalid user 
     if (email === 'shijawa@gmail.com' && password === 'secretSuperstar') {
-        console.log('valid user');
+      window.location.href = 'bank-inside.html'
     }
     else{
-        console.log('invalid user');
+        console.log('you are being watched!');
     }
 })
