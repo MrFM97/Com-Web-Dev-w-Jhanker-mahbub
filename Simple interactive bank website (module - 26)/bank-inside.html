@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,11 @@
     <title>welcome to bank portal</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
     <header>
-        <h1 class="text-5xl text-center mt-6">Let's get some <span class="font-semibold text-violet-600">money baby</span>!!!
+        <h1 class="text-5xl text-center mt-6">Let's get some <span class="font-semibold text-violet-600">money
+                baby</span>!!!
         </h1>
     </header>
 
@@ -30,7 +33,30 @@
                 </div>
             </div>
         </section>
+
+        <!-- deposit and withdraw -->
+        <section class="mt-12">
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+                <div class="bg-sky-600 p-8 rounded-xl">
+                    <h4 class="text-2xl mb-4">Please Deposit</h4>
+                    <input class="w-9/12 block mb-3 px-3" type="number" name="" id="deposit-field"
+                        placeholder="$ Amount you want to deposit">
+                    <button id="btn-deposit" type="submit"
+                        class="bg-yellow-900 px-8 py-2 font-medium text-white rounded-lg hover:bg-slate-700">Deposit</button>
+                </div>
+                <div class="bg-indigo-600 p-8 rounded-xl">
+                    <h4 class="text-2xl mb-4">$ You Can Withdraw</h4>
+                    <input class="w-9/12 block mb-3 px-3" type="number" name="" id="user-email"
+                        placeholder="your email adress, please!">
+                    <button id="btn-withdraw" type="submit" class="bg-slate-900 px-8 py-2 font-medium text-white rounded-lg hover:bg-rose-500">withdraw</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- deposit and withdraw -->
     </main>
-    
+
 </body>
+
 </html>
