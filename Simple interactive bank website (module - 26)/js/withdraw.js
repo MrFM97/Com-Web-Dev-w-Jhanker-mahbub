@@ -11,12 +11,14 @@
 */
 
 // step-1
-document.getElementById('btn-withdraw').addEventListener('click', function() {
-   
+document.getElementById('btn-withdraw').addEventListener('click', function () {
+
     // step-2:
+
     const withdrawField = document.getElementById('withdraw-field');
-    const newWithDrawAmountString = withdrawField.value; 
+    const newWithDrawAmountString = withdrawField.value;
     const newWithDrawAmount = parseFloat(newWithDrawAmountString);
+
 
     // step-3
     const withdrawtotalElement = document.getElementById('withdraw-total');
