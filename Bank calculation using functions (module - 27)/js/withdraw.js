@@ -8,7 +8,7 @@
 7. calculate new blnce and set it to the balance total element */
 
 document.getElementById('btn-withdraw').addEventListener('click', function() {
-    const withdrawField = document.getElementById(withdraw-field);
+    const withdrawField = document.getElementById('withdraw-field');
     const newWithdrawAmountString = withdrawField.value;
     const newWithdrawAmount = parseFloat(newWithdrawAmountString);
 
@@ -22,9 +22,9 @@ document.getElementById('btn-withdraw').addEventListener('click', function() {
     withdrawTotalElement.innerText = newWithdrawTotal;
 
     // step-6
-    const balanceElement = document.getElementById('balance-total');
-    const previousBalancetotalString = balanceElement.innerText;
-    const previousBalanceTotal = parseFloat(previousBalancetotalString);
+   const balanceElement = document.getElementById('balance-total');
+    const previousBalanceTotalString = balanceElement.innerText;
+    const previousBalanceTotal = parseFloat(previousBalanceTotalString);
 
     // step-7
     const newBalanceTotal = previousBalanceTotal - newWithdrawAmount;
