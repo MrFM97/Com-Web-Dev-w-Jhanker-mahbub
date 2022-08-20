@@ -6,7 +6,7 @@
     width: 120px;
 }
 
-.panda-btn-warning{
+.pbutton{
     background-image: linear-gradient(to bottom, #FF589B 0%, #FF136F 100%);
     color: #fff;
     border: none;

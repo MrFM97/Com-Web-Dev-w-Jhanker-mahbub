@@ -12,10 +12,17 @@ document.getElementById('shoes').style.borderRadius = '30px';
 document.getElementById('bags').style.borderRadius = '30px';
 
 // কোন একটা ফাংশন লিখো। সেটার ভিতরে কনসোল লগ হবে। এবং সেই ফাংশন টা ক্লিক হ্যান্ডলার হিসেবে কোন একটা বাটনে যোগ করো 
-const funButton = document.querySelector(".panda-btn-warning");
+const funButton = document.querySelector(".targetBtn");
 funButton.addEventListener('click', pandaButton);
 function pandaButton() {
     console.log('button clicked');
 }
 
+
 /* এইবার নতুন করে সবগুলা buy now বাটনে এমন একটা ইভেন্ট হ্যান্ডলার যোগ করো। যাতে যেকোন একটা buy now বাটনে চাপ দিলে সেটা ওয়েবসাইট থেকে রিমুভ হয়ে যায়। একটু চিন্তা করে করার চেষ্টা করো।  */
+const buttons = document.getElementsByClassName('pbutton');
+for (const pbutton of buttons) {
+    pbutton.addEventListener('click', function (event) {
+        event.target.parentNode.removeChild(event.target);
+    })
+}
