@@ -44,3 +44,9 @@ document.getElementById('exampleInputEmail1').addEventListener('keyup', function
     const deleteButton = document.getElementById('sbutton');
     (text === 'email') ? deleteButton.removeAttribute('disabled') : deleteButton.setAttribute('disabled', true);
 })
+
+/* একটা মজার চ্যালেঞ্জ। কোন একটা ইমেজ এর উপরে mouseenter করলে সেই ইমেজটা চেইঞ্জ হয়ে যাবে। একটু গুগলে সার্চ দিয়ে দেখো। জিনিসটা কিভাবে করা যেতে পারে।  */
+document.querySelectorAll('#menter').addEventListener('mouseenter', mouseEnter);
+function mouseEnter() {
+    document.getElementById('menter').style.backgroundColor = 'red';
+}
