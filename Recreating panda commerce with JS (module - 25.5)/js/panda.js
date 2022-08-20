@@ -27,7 +27,7 @@ for (const pbutton of buttons) {
     })
 } */
 /* একদম নিচে একটা LET'S STAY IN TOUCH নামে একটা জিনিস আছে। সেখানে তুমি submit বাটনটা disable করে ফেলবে। তারপর কেউ যদি উপরে input ফিল্ডে যদি একজাক্টলি email শব্দটা লিখে। তাহলে বাটন একটিভ হবে। আর যদি অন্য কিছু লিখে তাহলে বাটনটা একটিভ হবে না।  */
-document.getElementById('exampleInputEmail1').addEventListener('keyup', function(event) {
+/* document.getElementById('exampleInputEmail1').addEventListener('keyup', function(event) {
     const text = event.target.value;
     const deleteButton = document.getElementById('sbutton');
     if(text === 'email'){
@@ -37,4 +37,10 @@ document.getElementById('exampleInputEmail1').addEventListener('keyup', function
             deleteButton.setAttribute('disabled', true);
         }
     
+}) */
+
+document.getElementById('exampleInputEmail1').addEventListener('keyup', function(event) {
+    const text = event.target.value;
+    const deleteButton = document.getElementById('sbutton');
+    (text === 'email') ? deleteButton.removeAttribute('disabled') : deleteButton.setAttribute('disabled', true);
 })
