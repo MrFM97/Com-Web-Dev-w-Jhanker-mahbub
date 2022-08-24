@@ -15,42 +15,51 @@
     <main>
         <section>
             <!-- .friend*5>h3.friend-name(friend-$)+p>lorem5 -->
-            <div class="friend">
-                <h3 class="friend-name">
-                    friend-1
-                </h3>
-                <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="friend">
-                <h3 class="friend-name">
-                    friend-2
-                </h3>
-
-                <p>Fuga dolore alias iusto aut!</p>
-            </div>
-            <div class="friend">
-                <h3 class="friend-name">
-                    friend-3
-                </h3>
-
-                <p>Numquam hic doloribus magni cumque.</p>
-            </div>
-            <div class="friend">
-                <h3 class="friend-name">
-                    friend-4
-                </h3>
-
-                <p>Cupiditate nihil odit architecto reprehenderit.</p>
-            </div>
-            <div class="friend">
-                <h3 class="friend-name">
-                    friend-5
-                </h3>
-
-                <p>Error explicabo magni rerum unde!</p>
+            <div id="friends" class="friends">
+                <div class="friend">
+                    <h3 class="friend-name">
+                        friend-1
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="friend">
+                    <h3 class="friend-name">
+                        friend-2
+                    </h3>
+    
+                    <p>Fuga dolore alias iusto aut!</p>
+                </div>
+                <div class="friend">
+                    <h3 class="friend-name" id="third-friend">
+                        friend-3
+                    </h3>
+    
+                    <p>Numquam hic doloribus magni cumque.</p>
+                </div>
+                <div class="friend">
+                    <h3 class="friend-name">
+                        friend-4
+                    </h3>
+    
+                    <p>Cupiditate nihil odit architecto reprehenderit.</p>
+                </div>
+                <div class="friend">
+                    <h3 class="friend-name">
+                        friend-5
+                    </h3>
+    
+                    <p>Error explicabo magni rerum unde!</p>
+                </div>
+                <div class="operations">
+                    <button id="apply-bg">apply background</button>
+                    <button id="center-third">Center the Third</button>
+                    <button id="add-friend">Add new friend</button>
+                </div>
             </div>
         </section>
     </main>
+
+    <script src="js/dom.js"></script>
 </body>
 
 </html>
