@@ -12,7 +12,7 @@ I am a web developer. I love to code. I love to eat biryani. */
 const webDeveloper = `
 I am a web developer. 
 I love to code. 
-I love to eat biryani.`
+I love to eat biryani.`;
 
 console.log(webDeveloper);
 
@@ -20,6 +20,6 @@ console.log(webDeveloper);
 will come from you and the other parameter will be a default
 parameter. Add these two parameters and return the result. */
 
-const func = (param1, param2) => {
+const func = (param1, param2) => { 
     
-}
+};
