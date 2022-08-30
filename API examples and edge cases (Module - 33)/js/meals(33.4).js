@@ -31,7 +31,7 @@ const searchFood = () => {
 }
 
 const loadMealDetail = (idMeal) => {
-    // console.log('get detail of id');
+    // console.log('get detail of id', idMeal);
     const url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idMeal}`;
     // console.log(url);
 
@@ -46,7 +46,6 @@ const displayMealDetails = meal => {
     const mealDiv = document.createElement('div');
     mealDiv.classList.add('card');
     mealDiv.innerHTML = `
-    <div class="card" style="width: 18rem;">
   <img src="${meal.strMealThumb}" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">${meal.strMeal}e</h5>
@@ -55,7 +54,7 @@ const displayMealDetails = meal => {
   </div>
 </div>
     `;
-    detailContainer.appendChild(mealDiv)
+  detailContainer.appendChild(mealDiv);
 }
 
 loadMeals('');
