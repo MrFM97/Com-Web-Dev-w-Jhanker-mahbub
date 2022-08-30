@@ -7,7 +7,7 @@ const loadUserFetch = () => {
 }
 
 const loadUserAsync = async () => {
-    const url = `https://randomuser.me/apis/?gender=female`;
+    const url = `https://randomuser.me/api/?gender=female`;
     // error catching system
     try {
         const res = await fetch(url);
