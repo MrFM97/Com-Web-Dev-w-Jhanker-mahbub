@@ -19,13 +19,17 @@
     <!-- display search results -->
     <div class="mb-3 w-50">
       <label for="exampleInputEmail1" class="form-label">Email address</label>
-      <input id="searchField" type="text" class="form-email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seach your phone">
+      <input id="searchField" type="text" class="form-email" class="form-control" id="exampleInputEmail1"
+        aria-describedby="emailHelp" placeholder="Seach your phone">
       <div id="btnSearch" class="btn btn-primary">Search</div>
     </div>
     <!-- display search results -->
     <section>
       <div id="phoneContainer" class="row row-cols-1 row-cols-md-2 g-4">
 
+      </div>
+      <div id="noPhoneMessage" class="d-none mt-4">
+        <h3 class="text-warning">No Phone Found. Please try a different search</h3>
       </div>
     </section>
   </main>
