@@ -20,12 +20,12 @@ const displayPhones = (phones, dataLimit) => {
 
     // display no phones found
     const noPhone = document.getElementById('noPhoneMessage');
-    if (phones.length === 0){
+    if (phones.length === 0) {
         noPhone.classList.remove('d-none');
     }
     else {
         noPhone.classList.add('d-none');
-        }
+    }
     phones.forEach(phone => {
         const phoneDiv = document.createElement('div');
         phoneDiv.classList.add('col');
@@ -36,6 +36,7 @@ const displayPhones = (phones, dataLimit) => {
               <h5 class="card-title">${phone.phone_name}</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
                 content. This content is a little bit longer.</p>
+                <button onclick="loadPhoneDetails('${phone.slug}')" href="#" class="btn btn-primary">Show Details</button>
             </div>
           </div>`;
         phonesContainer.appendChild(phoneDiv);
@@ -60,6 +61,13 @@ document.getElementById('btnSearch').addEventListener('click', function () {
     processSearch(10);
 });
 
+// search input field enter click handler
+document.getElementById('searchField').addEventListener('keypress', function (e) { 
+    if (e.key === 'Enter') {
+        processSearch(10);
+    }
+    });    // search input field   enter keyup handler 
+
 const toggleSpinner = isLoading => {
     const loaderSection = document.getElementById('loader');
     if (isLoading) {
@@ -67,14 +75,23 @@ const toggleSpinner = isLoading => {
     }
     else {
         loaderSection.classList.add('d-none');
-    }       
+    }
 }
 
 // Not the best way to handle this, but doing this for API limitations
 
 document.getElementById('btnShowAll').addEventListener('click', function () {
-    
+
     processSearch();
-}); 
+});
+
+const loadPhoneDetails = async id => {
+    const url = `https://openapi.programming-hero.com/api/phone/${id}`
+    const res = await fetch(url);
+    const data = await response.json(); // JSON.parse(response  .json() 
+    console.log(data.data); 
+}
+
+
 
 loadPhones();
