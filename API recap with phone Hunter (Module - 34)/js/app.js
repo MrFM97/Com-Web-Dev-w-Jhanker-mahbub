@@ -2,16 +2,16 @@ const loadPhones = async (searchText, dataLimit) => {
     const url = `https://openapi.programming-hero.com/api/phones?search=${searchText}`
     const res = await fetch(url);
     const data = await res.json();
-    displayPhones(data.data);
+    displayPhones(data.data, dataLimit);
 }
 
 const displayPhones = (phones, dataLimit) => {
     const phonesContainer = document.getElementById('phoneContainer');
     phonesContainer.innerText = ''; //textContent also allowed
-    // display 20 phones only
+    // display 10 phones only
+    const showAll = document.getElementById('showAll');
     if (dataLimit && phones.length > 10) {
         phones = phones.slice(0, 10);
-        const showAll = document.getElementById('showAll');
         showAll.classList.remove('d-none');
     }
     else {
@@ -72,7 +72,7 @@ const toggleSpinner = isLoading => {
 
 // Not the best way to handle this, but doing this for API limitations
 
-document.getElementById('btnShowall').addEventListener('click', function () {
+document.getElementById('btnShowAll').addEventListener('click', function () {
     
     processSearch();
 }); 
