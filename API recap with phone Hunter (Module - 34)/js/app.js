@@ -1,15 +1,22 @@
-const loadPhones = async (searchText) => {
+const loadPhones = async (searchText, dataLimit) => {
     const url = `https://openapi.programming-hero.com/api/phones?search=${searchText}`
     const res = await fetch(url);
     const data = await res.json();
     displayPhones(data.data);
 }
 
-const displayPhones = phones => {
+const displayPhones = (phones, dataLimit) => {
     const phonesContainer = document.getElementById('phoneContainer');
     phonesContainer.innerText = ''; //textContent also allowed
     // display 20 phones only
-    phones = phones.slice(0, 20);
+    if (dataLimit && phones.length > 10) {
+        phones = phones.slice(0, 10);
+        const showAll = document.getElementById('showAll');
+        showAll.classList.remove('d-none');
+    }
+    else {
+        showAll.classList.add('d-none');
+    }
 
     // display no phones found
     const noPhone = document.getElementById('noPhoneMessage');
@@ -39,13 +46,18 @@ const displayPhones = phones => {
     toggleSpinner(false);
 }
 
-// handle search button click
-
-document.getElementById('btnSearch').addEventListener('click', function () {
+const processSearch = (dataLimit) => {
+    // start loader
     toggleSpinner(true);
     const searchField = document.getElementById('searchField');
     const searchText = searchField.value;
-    loadPhones(searchText);
+    loadPhones(searchText, dataLimit);
+}
+
+// handle search button click
+
+document.getElementById('btnSearch').addEventListener('click', function () {
+    processSearch(10);
 });
 
 const toggleSpinner = isLoading => {
@@ -57,5 +69,12 @@ const toggleSpinner = isLoading => {
         loaderSection.classList.add('d-none');
     }       
 }
+
+// Not the best way to handle this, but doing this for API limitations
+
+document.getElementById('btnShowall').addEventListener('click', function () {
+    
+    processSearch();
+}); 
 
 loadPhones();
