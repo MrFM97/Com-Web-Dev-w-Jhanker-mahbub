@@ -2,6 +2,16 @@
 
 const API_KEY = `3236e8112758b38a5e22378425ae7b00`;
 
-const loadTemperature = city => { 
-    const url = `https://
+const loadTemperature = city => {
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`;
+    fetch(url)
+        .then(res => res.json())
+        .then(data => displayTemperature(data));
 }
+
+const displayTemperature = data => {
+    const temperature = document.getElementById('temperature');
+    console.log(data);
+    //temperature.innerText = data.temp;
+}
+loadTemperature('Dhaka');
