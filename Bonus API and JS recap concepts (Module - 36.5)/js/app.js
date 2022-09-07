@@ -11,7 +11,14 @@ const loadTemperature = city => {
 
 const displayTemperature = data => {
     const temperature = document.getElementById('temperature');
+    temperature.innerText = data.main.temp;
     console.log(data);
-    //temperature.innerText = data.temp;
+}
+
+document.getElementById('btn-search').addEventListener('click', function () { 
+    const searchField = document.getElementById('search-field');
+    const city = searchField.value;
+    loadTemperature(city);
+
 }
 loadTemperature('Dhaka');
