@@ -13,6 +13,8 @@ const addProduct = () => {
     // set to localStorage
     // simple way 
 
-    localStorage.setItem('product', quantity);
+    localStorage.setItem(product, quantity);
 
 }
+
+const displayProduct = () => {
