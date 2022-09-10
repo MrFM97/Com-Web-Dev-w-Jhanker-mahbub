@@ -13,8 +13,34 @@ const addProduct = () => {
     // set to localStorage
     // simple way 
 
-    localStorage.setItem(product, quantity);
+    // localStorage.setItem(product, quantity);
+    saveItemTolocalStorage(product, quantity);
 
 }
 
-const displayProduct = () => {
+const getShoppingCartFromLocalStorage = () => {
+    let savedCart = localStorage.getItem('cart');
+    let cart = {};
+    if (savedCart) {
+        cart = JSON.parse(savedCart);
+    }
+    return cart;
+}
+
+const saveItemTolocalStorage = (product, quantity) => { 
+    const cart = getShoppingCartFromLocalStorage();
+    // add product to the object as properties
+    cart[product] = quantity;
+    const cartStringified = JSON.stringify(cart);
+
+    // save to localStorage
+    localStorage.setItem('cart', cartStringified);
+}
+
+const displayProduct = () => { 
+    const productContainer = document.getElementById('product-container');
+    const li = document.createElement('li');
+    li.innerText = `${product} : ${quantity}`;
+    productContainer.appendChild(li);
+
+}
