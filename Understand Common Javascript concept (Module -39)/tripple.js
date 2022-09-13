@@ -1,3 +1,4 @@
+//you should always use tripple equal
 const first = 2;
 const second = '2';
 if (first == second) {
@@ -6,3 +7,5 @@ if (first == second) {
 else {
     console.log('values are not equal');
 }
+
+// type conversion or type coercion or type casting
