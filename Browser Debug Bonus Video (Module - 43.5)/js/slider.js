@@ -18,7 +18,6 @@ setInterval( () => {
     if(imgIndex === images.length){
         imgIndex = 0;
     }
-
     const imgLink = images[imgIndex];
     img.setAttribute('src', imgLink);
     imgIndex++;
