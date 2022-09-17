@@ -9,6 +9,7 @@ const images = [
     'images/pic-8.jpg',
     'images/pic-9.jpg',
 ];
+
 let imgIndex = 0;
 
 const img = document.getElementById('carousel-img');
